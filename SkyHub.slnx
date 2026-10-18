@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SkyHub.Api/SkyHub.Api.csproj" />
+    <Project Path="src/SkyHub.Application/SkyHub.Application.csproj" />
+    <Project Path="src/SkyHub.Domain/SkyHub.Domain.csproj" />
+    <Project Path="src/SkyHub.Infrastructure/SkyHub.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SkyHub.IntegrationTests/SkyHub.IntegrationTests.csproj" />
+    <Project Path="tests/SkyHub.UnitTests/SkyHub.UnitTests.csproj" />
+  </Folder>
+</Solution>

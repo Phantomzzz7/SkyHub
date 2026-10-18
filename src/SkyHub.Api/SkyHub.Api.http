@@ -1,0 +1,6 @@
+@SkyHub.Api_HostAddress = http://localhost:5286
+
+GET {{SkyHub.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
