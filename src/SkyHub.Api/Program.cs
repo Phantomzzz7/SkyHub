@@ -1,4 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using SkyHub.Infrastructure.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<SkyHubDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 

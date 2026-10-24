@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:17
+    container_name: skyhub-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: skyhub_user
+      POSTGRES_PASSWORD: skyhub_dev_password
+      POSTGRES_DB: skyhub
+    ports:
+      - "5432:5432"
+    volumes:
+      - skyhub-db-data:/var/lib/postgresql/data
+
+volumes:
+  skyhub-db-data:
